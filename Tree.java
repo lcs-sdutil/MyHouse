@@ -9,6 +9,8 @@ public class Tree
 {
     // instance variables - replace the example below with your own
     private Triangle tree;
+    private Triangle tree1;
+    private Triangle tree2;
     private Square trunk;
 
     /**
@@ -21,6 +23,8 @@ public class Tree
     {
         // initialise instance variables
         tree = new Triangle();
+        tree1 = new Triangle();
+        tree2 = new Triangle();
         trunk = new Square();
         
         // actually draw the tree
@@ -41,6 +45,20 @@ public class Tree
         tree.moveVertical(465);
         tree.changeColor("green");
         tree.makeVisible();
+        
+        tree1.changeSize(50, 75);
+        tree1.moveHorizontal(474);
+        tree1.moveVertical(445);
+        tree1.changeColor("green");
+        tree1.makeVisible();
+        
+        tree2.changeSize(50, 75);
+        tree2.moveHorizontal(474);
+        tree2.moveVertical(425);
+        tree2.changeColor("green");
+        tree2.makeVisible();
+        
+       
         
         
         
