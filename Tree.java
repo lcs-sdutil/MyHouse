@@ -39,34 +39,48 @@ public class Tree
      */
     public void drawTree(int x, int y)
     {
-        // draw triangle
-        tree.changeSize(50, 75);
-        tree.moveHorizontal(474);
-        tree.moveVertical(465);
-        tree.changeColor("green");
-        tree.makeVisible();
         
+       // draw square
+        trunk.makeVisible();
+        trunk.changeColor("black");
+        trunk.moveHorizontal(-25);
+        trunk.moveVertical(50);
+        
+       // move 
+       trunk.moveHorizontal(x);
+       trunk.moveVertical(y); 
+        
+        
+       // draw triangle
+        tree.changeSize(50, 75);
+        tree.makeVisible();
+        tree.moveVertical(40);
+        tree.changeColor("green");
+        
+        //move
+       tree.moveHorizontal(x);
+       tree.moveVertical(y);
+        
+   
+        //draw 2nd triangle
         tree1.changeSize(50, 75);
-        tree1.moveHorizontal(474);
-        tree1.moveVertical(445);
+        tree1.moveVertical(20);
         tree1.changeColor("green");
         tree1.makeVisible();
         
+        //move 
+        tree1.moveHorizontal(x);
+        tree1.moveVertical(y);
+        
+        //draw 3rd triangle
         tree2.changeSize(50, 75);
-        tree2.moveHorizontal(474);
-        tree2.moveVertical(425);
         tree2.changeColor("green");
         tree2.makeVisible();
         
-       
+        //move 
+        tree2.moveHorizontal(x);
+        tree2.moveVertical(y);
         
-        
-        
-        // draw square
-        trunk.makeVisible();
-        trunk.changeColor("black");
-        trunk.moveHorizontal(450);
-        trunk.moveVertical(480);
         
         // translate the tree to the specified location
         
