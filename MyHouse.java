@@ -20,6 +20,8 @@ public class MyHouse
     
     private Square driveway;
     private Square driveway1;
+    private Road road1;
+    
 
     /**
      * The job of a constructor is to initialize all the instance variables.
@@ -40,7 +42,13 @@ public class MyHouse
         driveway1 = new Square();
         tree1 = new Tree(20, 300);
         tree1 = new Tree(180, 300);
-        
+        road1 = new Road(-60,410);
+        road1 = new Road(-60,410);
+        road1 = new Road(40,410);
+        road1 = new Road(140,410);
+        road1 = new Road(240,410);
+        road1 = new Road(340,410);
+        road1 = new Road(440,410);
         
         drawHouse();
     
